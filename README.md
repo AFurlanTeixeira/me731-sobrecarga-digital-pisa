@@ -186,3 +186,9 @@ relatorio/
 [x] Análises de sensibilidade
 
 [x] Relatório técnico
+
+---
+
+## 📜 Licença
+
+Distribuído sob a licença MIT. Veja [`LICENSE`](LICENSE). Os microdados do PISA 2022 são da OCDE e seguem os termos de uso da organização.
