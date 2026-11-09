@@ -1,0 +1,415 @@
+Checksums MD5 dos arquivos de entrada:
+          data/pisa2022_paises.csv    data/pisa2022_gap_intrapais.csv 
+"fe4db3cd6f6ecd022ac2a73d3203989d" "afe2f71ae7c445b6e5e86c579756d4ba" 
+
+=====  t01_exclusoes  =====
+  CNT          PAIS                           motivo
+1 CRI    Costa Rica                     ESCS ausente
+2 GTM     Guatemala não aplicou os itens ST322/ST326
+3 KHM      Cambodia não aplicou os itens ST322/ST326
+4 PRY      Paraguay não aplicou os itens ST322/ST326
+5 USA United States não aplicou os itens ST322/ST326
+6 VNM      Viet Nam não aplicou os itens ST322/ST326
+
+Amostra analítica: n = 74 países/economias ( 35 da OCDE ); p = 9 
+
+=====  t02_descritiva  =====
+                    n    media      dp      min  mediana      max
+DIST_PROPRIA       74  29.3000  9.6010   5.1510  28.6400  53.6500
+DIST_COLEGAS       74  25.1200  7.8230   3.9430  24.5800  46.2900
+H_LAZER_ESCOLA     74   1.1510  0.3372   0.4212   1.0980   2.1960
+H_LAZER_SEMANA     74   2.3950  0.6051   1.0400   2.4100   3.7090
+H_LAZER_FDS        74   3.7290  0.6792   1.8610   3.7520   4.9380
+NOTIF_ATIVAS       74  35.1300  8.1960  12.3900  36.6500  51.5300
+SEMPRE_DISPONIVEL  74  65.7000  8.9090  46.5600  66.2500  82.5700
+PRESSAO_ONLINE     74  24.1800  9.9280   7.6510  23.2500  50.7400
+ANSIEDADE_SEM_DISP 74  26.6600  7.2310  14.5800  25.9600  44.8800
+ESCS               74  -0.3080  0.5305  -1.7850  -0.2159   0.5215
+MAT                74 441.8000 56.8500 339.1000 447.6000 574.7000
+LEI                74 437.8000 55.3500 335.5000 442.8000 542.6000
+CIE                74 450.2000 54.9000 354.9000 448.8000 561.4000
+ANXMAT             70   0.2261  0.2110  -0.2894   0.2010   0.6689
+Brasil:
+      DIST_PROPRIA       DIST_COLEGAS     H_LAZER_ESCOLA     H_LAZER_SEMANA        H_LAZER_FDS       NOTIF_ATIVAS 
+             45.08              40.30               1.12               2.75               4.36              39.97 
+ SEMPRE_DISPONIVEL     PRESSAO_ONLINE ANSIEDADE_SEM_DISP               ESCS                MAT                LEI 
+             65.90              21.82              33.11              -0.99             378.69             410.36 
+               CIE 
+            403.00 
+
+=====  t03_correlacoes  =====
+                   DIST_PROPRIA DIST_COLEGAS H_LAZER_ESCOLA H_LAZER_SEMANA H_LAZER_FDS NOTIF_ATIVAS SEMPRE_DISPONIVEL
+DIST_PROPRIA              1.000        0.939          0.384          0.312       0.131        0.458             0.124
+DIST_COLEGAS              0.939        1.000          0.313          0.190       0.060        0.478            -0.011
+H_LAZER_ESCOLA            0.384        0.313          1.000          0.553       0.543        0.458             0.006
+H_LAZER_SEMANA            0.312        0.190          0.553          1.000       0.814        0.192             0.623
+H_LAZER_FDS               0.131        0.060          0.543          0.814       1.000        0.058             0.462
+NOTIF_ATIVAS              0.458        0.478          0.458          0.192       0.058        1.000            -0.298
+SEMPRE_DISPONIVEL         0.124       -0.011          0.006          0.623       0.462       -0.298             1.000
+PRESSAO_ONLINE           -0.384       -0.241          0.050         -0.276      -0.118        0.040            -0.523
+ANSIEDADE_SEM_DISP       -0.113        0.042          0.107         -0.150      -0.091        0.320            -0.499
+ESCS                     -0.057       -0.190         -0.055          0.489       0.290       -0.230             0.703
+MAT                      -0.245       -0.380         -0.055          0.451       0.437       -0.496             0.710
+LEI                      -0.103       -0.252         -0.044          0.492       0.447       -0.512             0.799
+CIE                      -0.176       -0.323         -0.049          0.459       0.444       -0.497             0.753
+                   PRESSAO_ONLINE ANSIEDADE_SEM_DISP   ESCS    MAT    LEI    CIE
+DIST_PROPRIA               -0.384             -0.113 -0.057 -0.245 -0.103 -0.176
+DIST_COLEGAS               -0.241              0.042 -0.190 -0.380 -0.252 -0.323
+H_LAZER_ESCOLA              0.050              0.107 -0.055 -0.055 -0.044 -0.049
+H_LAZER_SEMANA             -0.276             -0.150  0.489  0.451  0.492  0.459
+H_LAZER_FDS                -0.118             -0.091  0.290  0.437  0.447  0.444
+NOTIF_ATIVAS                0.040              0.320 -0.230 -0.496 -0.512 -0.497
+SEMPRE_DISPONIVEL          -0.523             -0.499  0.703  0.710  0.799  0.753
+PRESSAO_ONLINE              1.000              0.686 -0.366 -0.278 -0.452 -0.383
+ANSIEDADE_SEM_DISP          0.686              1.000 -0.508 -0.544 -0.625 -0.599
+ESCS                       -0.366             -0.508  1.000  0.723  0.721  0.707
+MAT                        -0.278             -0.544  0.723  1.000  0.940  0.977
+LEI                        -0.452             -0.625  0.721  0.940  1.000  0.980
+CIE                        -0.383             -0.599  0.707  0.977  0.980  1.000
+
+=====  t04a_bartlett_esfericidade  =====
+         item     valor
+1 estatistica 4.933e+02
+2          gl 3.600e+01
+3     p_valor 1.087e-81
+
+=====  t04b_kmo  =====
+                 item  valor
+1          KMO_global 0.6290
+2        DIST_PROPRIA 0.5758
+3        DIST_COLEGAS 0.5545
+4      H_LAZER_ESCOLA 0.7091
+5      H_LAZER_SEMANA 0.6160
+6         H_LAZER_FDS 0.6598
+7        NOTIF_ATIVAS 0.6729
+8   SEMPRE_DISPONIVEL 0.6495
+9      PRESSAO_ONLINE 0.6803
+10 ANSIEDADE_SEM_DISP 0.6279
+
+=====  t04c_mardia  =====
+     item     valor
+1     b1p 2.247e+01
+2 p_assim 1.065e-07
+3     b2p 1.063e+02
+4   E_b2p 9.636e+01
+5  z_curt 3.047e+00
+6  p_curt 2.313e-03
+
+=====  t04d_atipicos  =====
+[1] CNT d2 
+<0 linhas> (ou row.names de comprimento 0)
+Correlação no gráfico qui-quadrado: 0.99 
+
+=====  t05_autovalores  =====
+  componente autovalor media_aleatoria q95_aleatoria     prop acumulada vara_quebrada
+1          1   3.23900          1.5720        1.7600 0.359900    0.3599        2.8290
+2          2   2.39200          1.3660        1.4940 0.265800    0.6257        1.8290
+3          3   1.69300          1.2160        1.3160 0.188100    0.8139        1.3290
+4          4   0.59780          1.0870        1.1760 0.066420    0.8803        0.9956
+5          5   0.46480          0.9720        1.0510 0.051650    0.9319        0.7456
+6          6   0.25240          0.8623        0.9402 0.028040    0.9600        0.5456
+7          7   0.21580          0.7540        0.8371 0.023980    0.9840        0.3790
+8          8   0.10640          0.6454        0.7324 0.011830    0.9958        0.2361
+9          9   0.03783          0.5247        0.6222 0.004203    1.0000        0.1111
+
+Componentes retidas: Kaiser = 3 | análise paralela = 3 | vara quebrada = 3 
+
+=====  t06_cargas  =====
+                                                      variavel coef_CP1 coef_CP2 coef_CP3 cor_CP1 cor_CP2 cor_CP3
+DIST_PROPRIA          Distrai-se com o próprio dispositivo (%)    0.405    0.252   -0.382   0.728   0.390  -0.497
+DIST_COLEGAS        Distrai-se com dispositivos de colegas (%)    0.337    0.333   -0.383   0.607   0.515  -0.498
+H_LAZER_ESCOLA                 Lazer digital na escola (h/dia)    0.348    0.259    0.319   0.626   0.400   0.416
+H_LAZER_SEMANA            Lazer digital em dia de aula (h/dia)    0.458   -0.108    0.345   0.824  -0.167   0.449
+H_LAZER_FDS             Lazer digital no fim de semana (h/dia)    0.374   -0.110    0.474   0.674  -0.171   0.616
+NOTIF_ATIVAS        Raramente desliga notificações na aula (%)    0.204    0.473   -0.030   0.367   0.731  -0.039
+SEMPRE_DISPONIVEL     Mantém o aparelho perto p/ responder (%)    0.306   -0.449    0.053   0.551  -0.694   0.069
+PRESSAO_ONLINE     Sente pressão para estar online na aula (%)   -0.295    0.320    0.408  -0.530   0.494   0.531
+ANSIEDADE_SEM_DISP             Fica ansioso sem o aparelho (%)   -0.173    0.456    0.303  -0.311   0.705   0.395
+                   comunalidade
+DIST_PROPRIA              0.930
+DIST_COLEGAS              0.882
+H_LAZER_ESCOLA            0.725
+H_LAZER_SEMANA            0.908
+H_LAZER_FDS               0.863
+NOTIF_ATIVAS              0.671
+SEMPRE_DISPONIVEL         0.790
+PRESSAO_ONLINE            0.807
+ANSIEDADE_SEM_DISP        0.749
+
+=====  t07a_bootstrap_autovalores  =====
+  componente autovalor  X2.5. X97.5.
+1          1    3.2390 2.8360 3.8510
+2          2    2.3920 2.0040 2.8010
+3          3    1.6930 1.2730 2.0080
+4          4    0.5978 0.4602 0.8436
+
+=====  t07b_bootstrap_cargas  =====
+                    componente           variavel     coef    ic_inf   ic_sup sinal_estavel
+DIST_PROPRIA               CP1       DIST_PROPRIA  0.40460  0.162300  0.49750          TRUE
+DIST_COLEGAS               CP1       DIST_COLEGAS  0.33740  0.047940  0.46740          TRUE
+H_LAZER_ESCOLA             CP1     H_LAZER_ESCOLA  0.34780  0.102000  0.44560          TRUE
+H_LAZER_SEMANA             CP1     H_LAZER_SEMANA  0.45760  0.320500  0.50290          TRUE
+H_LAZER_FDS                CP1        H_LAZER_FDS  0.37420  0.204800  0.43900          TRUE
+NOTIF_ATIVAS               CP1       NOTIF_ATIVAS  0.20410 -0.116900  0.40980         FALSE
+SEMPRE_DISPONIVEL          CP1  SEMPRE_DISPONIVEL  0.30630  0.026480  0.49080          TRUE
+PRESSAO_ONLINE             CP1     PRESSAO_ONLINE -0.29460 -0.442300 -0.01180          TRUE
+ANSIEDADE_SEM_DISP         CP1 ANSIEDADE_SEM_DISP -0.17260 -0.385100  0.13710         FALSE
+DIST_PROPRIA1              CP2       DIST_PROPRIA  0.25200 -0.071250  0.53040         FALSE
+DIST_COLEGAS1              CP2       DIST_COLEGAS  0.33310  0.005842  0.55820          TRUE
+H_LAZER_ESCOLA1            CP2     H_LAZER_ESCOLA  0.25880 -0.057240  0.46620         FALSE
+H_LAZER_SEMANA1            CP2     H_LAZER_SEMANA -0.10790 -0.405100  0.17460         FALSE
+H_LAZER_FDS1               CP2        H_LAZER_FDS -0.11040 -0.430800  0.20710         FALSE
+NOTIF_ATIVAS1              CP2       NOTIF_ATIVAS  0.47290  0.237100  0.54910          TRUE
+SEMPRE_DISPONIVEL1         CP2  SEMPRE_DISPONIVEL -0.44860 -0.556000 -0.16840          TRUE
+PRESSAO_ONLINE1            CP2     PRESSAO_ONLINE  0.31970 -0.104400  0.52560         FALSE
+ANSIEDADE_SEM_DISP1        CP2 ANSIEDADE_SEM_DISP  0.45570  0.121900  0.57360          TRUE
+DIST_PROPRIA2              CP3       DIST_PROPRIA -0.38220 -0.521700 -0.09867          TRUE
+DIST_COLEGAS2              CP3       DIST_COLEGAS -0.38270 -0.557700 -0.06742          TRUE
+H_LAZER_ESCOLA2            CP3     H_LAZER_ESCOLA  0.31930  0.110500  0.53170          TRUE
+H_LAZER_SEMANA2            CP3     H_LAZER_SEMANA  0.34510  0.190300  0.42840          TRUE
+H_LAZER_FDS2               CP3        H_LAZER_FDS  0.47370  0.291900  0.55310          TRUE
+NOTIF_ATIVAS2              CP3       NOTIF_ATIVAS -0.03010 -0.311300  0.31570         FALSE
+SEMPRE_DISPONIVEL2         CP3  SEMPRE_DISPONIVEL  0.05274 -0.221700  0.31670         FALSE
+PRESSAO_ONLINE2            CP3     PRESSAO_ONLINE  0.40780  0.132500  0.58250          TRUE
+ANSIEDADE_SEM_DISP2        CP3 ANSIEDADE_SEM_DISP  0.30330 -0.011160  0.54480         FALSE
+
+=====  t08_escolha_k  =====
+  k silhueta_ward silhueta_kmedias rand_aj_ward_km
+1 2        0.2628           0.2846          0.6979
+2 3        0.2620           0.2731          0.7349
+3 4        0.3143           0.3253          0.7549
+4 5        0.2953           0.3292          0.7293
+5 6        0.2635           0.3104          0.7244
+Número de grupos escolhido (maior silhueta média, k-médias): 5 
+
+=====  t09_estabilidade  =====
+           item  valor
+1 rand_aj_medio 0.6568
+2   rand_aj_q05 0.4153
+3   rand_aj_q50 0.6460
+
+=====  t10_composicao_grupos  =====
+    CNT                         PAIS OCDE grupo silhueta    CP1    CP2    CP3
+BRN BRN            Brunei Darussalam    0     1    0.220 -3.869 -0.981  0.557
+TAP TAP               Chinese Taipei    0     1    0.431 -1.271 -1.339  2.060
+HKG HKG            Hong Kong (China)    0     1    0.439 -1.398 -1.356  1.891
+MAC MAC                Macao (China)    0     1    0.486 -1.636 -1.607  2.759
+MLT MLT                        Malta    0     1    0.488 -1.477 -1.632  2.085
+KOR KOR                        Korea    1     1    0.450 -2.179 -2.769  1.848
+JPN JPN                        Japan    1     1    0.217 -4.680 -3.257 -0.820
+MKD MKD              North Macedonia    0     2    0.148  0.247  0.228 -0.214
+SRB SRB                       Serbia    0     2    0.249  0.124 -0.062 -0.385
+LTU LTU                    Lithuania    1     2    0.217  0.336 -0.289  0.218
+PAN PAN                       Panama    0     2    0.101 -1.152 -0.648 -0.867
+BEL BEL                      Belgium    1     2    0.338  0.940 -0.802 -0.373
+TUR TUR                      Türkiye    1     2    0.158 -1.036 -0.906  0.391
+SWE SWE                       Sweden    1     2    0.194  1.405 -1.254 -0.861
+FRA FRA                       France    1     2    0.380  0.709 -1.356 -1.117
+HRV HRV                      Croatia    0     2    0.382  0.647 -1.404  0.425
+PRT PRT                     Portugal    1     2    0.260  1.522 -1.460  0.211
+NLD NLD                  Netherlands    1     2    0.138  1.801 -1.472 -0.683
+SVN SVN                     Slovenia    1     2    0.431 -0.712 -1.502 -1.151
+CHE CHE                  Switzerland    1     2    0.440 -0.510 -1.536 -0.047
+ESP ESP                        Spain    1     2    0.398 -0.145 -1.721 -1.742
+NOR NOR                       Norway    1     2    0.526  0.442 -1.722 -0.699
+SGP SGP                    Singapore    0     2    0.524  0.311 -1.791  0.090
+DNK DNK                      Denmark    1     2    0.374  0.731 -2.383 -1.463
+GBR GBR               United Kingdom    1     2    0.424  0.609 -2.905  0.234
+IRL IRL                      Ireland    1     2    0.260 -0.504 -3.845 -0.765
+ARG ARG                    Argentina    0     3    0.396  2.836  2.257 -2.040
+BRA BRA                       Brazil    0     3    0.181  1.950  1.470 -0.599
+CHL CHL                        Chile    1     3    0.551  2.295  0.928 -2.203
+URY URY                      Uruguay    0     3    0.558  2.659  0.614 -1.784
+FIN FIN                      Finland    1     3    0.141  2.072 -0.370 -0.454
+NZL NZL                  New Zealand    1     3    0.387  1.883 -0.412 -2.656
+CAN CAN                       Canada    1     3    0.255  1.890 -0.646 -1.387
+AUS AUS                    Australia    1     3    0.032  1.567 -1.332 -1.974
+BGR BGR                     Bulgaria    0     4    0.184  3.737  2.620  1.197
+GRC GRC                       Greece    1     4    0.198  0.797  1.511  0.480
+THA THA                     Thailand    0     4    0.273  0.340  1.433  1.663
+POL POL                       Poland    1     4    0.496  2.526  1.211  1.899
+GEO GEO                      Georgia    0     4    0.296  0.333  0.969  1.349
+ROU ROU                      Romania    0     4    0.546  2.125  0.943  1.923
+SVK SVK              Slovak Republic    1     4    0.521  1.741  0.635  2.584
+ISR ISR                       Israel    1     4    0.485  1.594  0.226  1.276
+QUR QUR Ukrainian regions (18 of 27)    0     4    0.268  0.498  0.167  1.230
+AUT AUT                      Austria    1     4   -0.001  0.002 -0.118  1.033
+CZE CZE               Czech Republic    1     4    0.462  1.706 -0.161  1.490
+LVA LVA                       Latvia    1     4    0.298  2.949 -0.208  0.788
+EST EST                      Estonia    1     4    0.441  2.986 -0.238  1.524
+ITA ITA                        Italy    1     4    0.150  2.766 -0.523  0.405
+HUN HUN                      Hungary    1     4    0.404  2.807 -0.658  1.439
+DEU DEU                      Germany    1     4    0.105  1.151 -0.861  1.186
+UZB UZB                   Uzbekistan    0     5    0.327 -3.201  3.145  1.530
+MAR MAR                      Morocco    0     5    0.443 -1.126  2.931 -1.227
+PHL PHL                  Philippines    0     5    0.362 -1.338  2.855 -2.225
+JOR JOR                       Jordan    0     5    0.502 -1.734  2.838  0.135
+PSE PSE        Palestinian Authority    0     5    0.500 -1.785  2.772  0.260
+IDN IDN                    Indonesia    0     5    0.562 -1.867  2.154 -0.357
+QAZ QAZ            Baku (Azerbaijan)    0     5    0.389 -0.512  1.847  0.046
+ALB ALB                      Albania    0     5    0.525 -1.278  1.585  0.140
+KSV KSV                       Kosovo    0     5    0.377 -0.254  1.480 -0.540
+MYS MYS                     Malaysia    0     5    0.355 -2.527  1.262  0.901
+DOM DOM           Dominican Republic    0     5    0.454 -1.454  1.219 -1.470
+SAU SAU                 Saudi Arabia    0     5    0.419 -1.774  1.203  0.938
+QAT QAT                        Qatar    0     5    0.423 -1.732  1.055  0.815
+MDA MDA          Republic of Moldova    0     5    0.406 -0.778  1.003 -0.543
+MNE MNE                   Montenegro    0     5    0.243 -0.190  0.960 -1.142
+KAZ KAZ                   Kazakhstan    0     5    0.461 -2.085  0.718 -0.357
+SLV SLV                  El Salvador    0     5    0.424 -1.808  0.583 -0.740
+MNG MNG                     Mongolia    0     5    0.161 -0.336  0.569 -0.948
+ARE ARE         United Arab Emirates    0     5    0.227 -1.094  0.554  1.178
+COL COL                     Colombia    1     5    0.160 -0.775  0.288 -1.324
+JAM JAM                      Jamaica    0     5    0.091 -0.776  0.148 -0.147
+ISL ISL                      Iceland    1     5    0.074 -1.185 -0.057 -2.377
+PER PER                         Peru    0     5    0.143 -3.363 -0.386 -1.250
+MEX MEX                       Mexico    1     5    0.033 -1.487 -0.415 -1.248
+
+=====  t11_perfil_grupos  =====
+    n DIST_PROPRIA DIST_COLEGAS H_LAZER_ESCOLA H_LAZER_SEMANA H_LAZER_FDS NOTIF_ATIVAS SEMPRE_DISPONIVEL PRESSAO_ONLINE
+G1  7        12.57        11.24         0.8941          2.115       3.781        20.77             68.02          36.92
+G2 19        28.00        23.12         0.9901          2.519       3.755        31.37             71.50          15.23
+G3  8        46.48        37.56         1.2030          2.575       3.800        38.64             71.21          15.32
+G4 16        31.72        26.53         1.5640          3.127       4.520        39.75             69.85          24.66
+G5 24        27.87        25.66         1.0610          1.831       3.141        38.06             55.84          30.20
+   ANSIEDADE_SEM_DISP      ESCS   MAT   LEI   CIE ANXMAT     CP1     CP2     CP3
+G1              24.63 -0.159500 515.8 490.2 512.4 0.3004 -2.3590 -1.8490  1.4830
+G2              21.18 -0.007483 471.8 469.2 480.3 0.1553  0.3034 -1.4120 -0.4630
+G3              21.85 -0.237100 440.5 460.7 465.7 0.2852  2.1440  0.3138 -1.6370
+G4              29.51 -0.193300 456.1 453.1 464.0 0.1401  1.7540  0.4342  1.3420
+G5              31.28 -0.689300 387.3 380.0 393.9 0.2970 -1.4360  1.2630 -0.4147
+
+=====  t12_correlacoes_desempenho  =====
+  componente resposta       r r_parcial_ESCS
+1        CP1      MAT  0.2308      -0.009917
+2        CP1      LEI  0.3510       0.174800
+3        CP1      CIE  0.2912       0.088940
+4        CP2      MAT -0.7692      -0.596500
+5        CP2      LEI -0.8103      -0.672100
+6        CP2      CIE -0.7966      -0.649700
+7        CP3      MAT  0.2754       0.300400
+8        CP3      LEI  0.1438       0.109000
+9        CP3      CIE  0.2001       0.188600
+
+=====  t12b_correlacao_cp_escs  =====
+         V1
+CP1  0.3280
+CP2 -0.6138
+CP3  0.0952
+
+=====  t13a_regressao_multivariada_wilks  =====
+     Lambda      F gl1 gl2   p_valor   eta2 qui2_bartlett gl_qui2    p_qui2
+CP1  0.6391 12.610   3  67 1.247e-06 0.3609         30.22       3 1.241e-06
+CP2  0.3928 34.520   3  67 1.323e-13 0.6072         63.07       3 1.298e-13
+CP3  0.7610  7.013   3  67 3.588e-04 0.2390         18.43       3 3.582e-04
+ESCS 0.7721  6.594   3  67 5.687e-04 0.2279         17.46       3 5.677e-04
+
+=====  t13b_regressao_coeficientes  =====
+             resposta       termo Estimate Std. Error   p_valor     R2
+(Intercept)       MAT (Intercept)  451.500      4.267 4.328e-78 0.7647
+CP1               MAT         CP1    4.236      2.031 4.069e-02 0.7647
+CP2               MAT         CP2  -21.620      2.835 9.559e-11 0.7647
+CP3               MAT         CP3   10.800      2.574 7.916e-05 0.7647
+ESCS              MAT        ESCS   31.580      8.792 6.100e-04 0.7647
+(Intercept)1      LEI (Intercept)  443.900      3.651 3.124e-82 0.8183
+CP11              LEI         CP1    8.896      1.738 2.640e-06 0.8183
+CP21              LEI         CP2  -24.870      2.425 1.646e-15 0.8183
+CP31              LEI         CP3    5.356      2.202 1.761e-02 0.8183
+ESCS1             LEI        ESCS   19.620      7.522 1.114e-02 0.8183
+(Intercept)2      CIE (Intercept)  456.700      3.980 1.667e-80 0.7805
+CP12              CIE         CP1    6.848      1.894 5.670e-04 0.7805
+CP22              CIE         CP2  -23.850      2.644 2.755e-13 0.7805
+CP32              CIE         CP3    7.626      2.401 2.231e-03 0.7805
+ESCS2             CIE        ESCS   21.040      8.201 1.246e-02 0.7805
+
+=====  t13c_ganho_R2  =====
+               MAT    LEI    CIE
+R2_so_ESCS  0.5232 0.5205 0.4993
+R2_completo 0.7647 0.8183 0.7805
+ganho       0.2415 0.2978 0.2812
+
+=====  t13d_mardia_residuos  =====
+     item    valor
+1     b1p  1.56200
+2 p_assim  0.03696
+3     b2p 15.77000
+4   E_b2p 14.60000
+5  z_curt  0.92080
+6  p_curt  0.35710
+Maiores distâncias dos resíduos:
+  MKD   MNG   NLD   HKG   SGP 
+12.44 10.31  8.60  8.53  8.51 
+
+=====  t14a_manova_grupos  =====
+                        Lambda     F gl1   gl2   p_valor   eta2 qui2_bartlett gl_qui2    p_qui2
+MANOVA_grupo            0.2819 9.081  12 177.6 1.678e-13 0.3443         87.36      12 1.597e-13
+MANCOVA_grupo_dado_ESCS 0.3447 7.226  12 174.9 1.159e-10 0.2989         72.43      12 1.119e-10
+
+=====  t14b_medias_ajustadas  =====
+     MAT   LEI   CIE
+G1 507.6 482.8 505.3
+G2 455.3 454.2 465.9
+G3 436.6 457.2 462.3
+G4 449.8 447.4 458.5
+G5 408.3 398.9 412.2
+
+=====  t15a_meta_intrapais  =====
+               k efeito_fixo ep_fixo efeito_aleatorio ep_aleatorio  ic_inf  ic_sup     Q        p_Q    tau     I2
+distracao     74     -14.160  0.3774          -15.030       1.2440 -17.470 -12.590 770.3 5.981e-117 10.050 0.9052
+notificacoes  74     -26.160  0.3134          -26.510       0.9818 -28.430 -24.580 696.9 1.504e-102  7.893 0.8952
+lazer_mais_4h 74       6.503  0.3503            6.313       1.0980   4.161   8.465 704.0 6.117e-104  8.869 0.8963
+              n_neg_signif n_pos_signif
+distracao               58            0
+notificacoes            74            0
+lazer_mais_4h            7           34
+
+=====  t15b_entre_vs_dentro  =====
+             entre_paises ep_entre dentro_paises ep_dentro
+distracao          -121.0    46.43        -15.03    1.2440
+notificacoes       -241.6    50.88        -26.51    0.9818
+
+=====  t15c_gap_notif_por_grupo  =====
+  grupo  k efeito_aleatorio ep_aleatorio
+1     1  7           -37.67        1.813
+2     2 19           -25.41        1.693
+3     3  8           -21.47        1.877
+4     4 16           -22.46        1.394
+5     5 24           -28.88        1.891
+
+=====  t16a_sensibilidade_acp  =====
+              n congruencia_CP1 congruencia_CP2 congruencia_CP3
+OCDE         35          0.8278          0.8220          0.8213
+sem_atipicos 73          0.9999          0.9989          0.9986
+spearman     74          0.9727          0.9711          0.9941
+
+=====  t16b_sensibilidade_grupos  =====
+                     item  valor
+1      rand_aj_9variaveis 0.6234
+2 rand_aj_ward_vs_kmedias 0.7293
+
+=====  t16c_sensibilidade_coef_CP2  =====
+                         MAT    LEI    CIE
+completo              -21.62 -24.87 -23.85
+sem_atipicos_residuos -21.50 -24.67 -23.68
+com_OCDE              -19.91 -22.28 -21.35
+
+Tempo de execução: 2 s
+R version 4.6.1 (2026-06-24 ucrt)
+Platform: x86_64-w64-mingw32/x64
+Running under: Windows 11 x64 (build 26200)
+
+Matrix products: default
+  LAPACK version 3.12.1
+
+locale:
+[1] LC_COLLATE=Portuguese_Brazil.utf8  LC_CTYPE=Portuguese_Brazil.utf8    LC_MONETARY=Portuguese_Brazil.utf8
+[4] LC_NUMERIC=C                       LC_TIME=Portuguese_Brazil.utf8    
+
+time zone: America/Sao_Paulo
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+loaded via a namespace (and not attached):
+[1] compiler_4.6.1 tools_4.6.1   
