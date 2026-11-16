@@ -10,8 +10,8 @@
 | Atípicos ($d^2 > \chi^2_9(0{,}001)$) | nenhum |
 | Correlação no gráfico qui-quadrado | 0,99 |
 
-As correlações são suficientes para a redução de dimensão: rejeita-se a esfericidade com folga. As duas variáveis de distração são quase redundantes entre si (r = 0,94). O gráfico qui-quadrado (Figura 2) é aproximadamente linear, com correlação de 0,99 com os quantis teóricos, mas os testes de Mardia rejeitam a normalidade multivariada. Isso justifica usar o bootstrap como referência principal para a incerteza dos autovalores, e não o intervalo 8-33 de JW, que supõe normalidade (Seção 3.3.4). Nenhum país é atípico ao nível de 0,1% ($\chi^2_9(0{,}001) = 27{,}9$). A maior distância é a da Tailândia ($d^2 = 23{,}95$).
+As correlações são suficientes para a redução de dimensão: rejeita-se a esfericidade com folga. As duas variáveis de distração são quase redundantes entre si (r = 0,94). O gráfico qui-quadrado (Figura 3) é aproximadamente linear, com correlação de 0,99 com os quantis teóricos, mas os testes de Mardia rejeitam a normalidade multivariada. Isso justifica usar o bootstrap como referência principal para a incerteza dos autovalores, e não o intervalo 8-33 de JW, que supõe normalidade (Seção 3.3.4). Nenhum país é atípico ao nível de 0,1% ($\chi^2_9(0{,}001) = 27{,}9$). A maior distância é a da Tailândia ($d^2 = 23{,}95$).
 
-![Figura 2](../results/figures/f02_quiquadrado.png)
+![Figura 3](../results/figures/f02_quiquadrado.png)
 
-**Figura 2.** Gráfico qui-quadrado das distâncias de Mahalanobis dos 74 países (`f02`).
+**Figura 3.** Gráfico qui-quadrado das distâncias de Mahalanobis dos 74 países (`f02`).

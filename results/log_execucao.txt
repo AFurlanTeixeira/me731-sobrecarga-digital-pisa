@@ -116,8 +116,8 @@ Componentes retidas: Kaiser = 3 | análise paralela = 3 | vara quebrada = 3
 
 =====  t06_cargas  =====
                                                       variavel coef_CP1 coef_CP2 coef_CP3 cor_CP1 cor_CP2 cor_CP3
-DIST_PROPRIA          Distrai-se com o próprio dispositivo (%)    0.405    0.252   -0.382   0.728   0.390  -0.497
-DIST_COLEGAS        Distrai-se com dispositivos de colegas (%)    0.337    0.333   -0.383   0.607   0.515  -0.498
+DIST_PROPRIA             Distrai-se com o próprio aparelho (%)    0.405    0.252   -0.382   0.728   0.390  -0.497
+DIST_COLEGAS           Distrai-se com aparelhos de colegas (%)    0.337    0.333   -0.383   0.607   0.515  -0.498
 H_LAZER_ESCOLA                 Lazer digital na escola (h/dia)    0.348    0.259    0.319   0.626   0.400   0.416
 H_LAZER_SEMANA            Lazer digital em dia de aula (h/dia)    0.458   -0.108    0.345   0.824  -0.167   0.449
 H_LAZER_FDS             Lazer digital no fim de semana (h/dia)    0.374   -0.110    0.474   0.674  -0.171   0.616
@@ -393,7 +393,12 @@ completo              -21.62 -24.87 -23.85
 sem_atipicos_residuos -21.50 -24.67 -23.68
 com_OCDE              -19.91 -22.28 -21.35
 
-Tempo de execução: 2 s
+=====  t17_entre_dentro_grafico  =====
+              entre ep_entre dentro ep_dentro razao
+notificacoes -241.6    50.88 -26.51    0.9818 9.115
+distracao    -121.0    46.43 -15.03    1.2440 8.049
+
+Tempo de execução: 3 s
 R version 4.6.1 (2026-06-24 ucrt)
 Platform: x86_64-w64-mingw32/x64
 Running under: Windows 11 x64 (build 26200)

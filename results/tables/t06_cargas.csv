@@ -1,6 +1,6 @@
 "","variavel","coef_CP1","coef_CP2","coef_CP3","cor_CP1","cor_CP2","cor_CP3","comunalidade"
-"DIST_PROPRIA","Distrai-se com o próprio dispositivo (%)",0.405,0.252,-0.382,0.728,0.39,-0.497,0.93
-"DIST_COLEGAS","Distrai-se com dispositivos de colegas (%)",0.337,0.333,-0.383,0.607,0.515,-0.498,0.882
+"DIST_PROPRIA","Distrai-se com o próprio aparelho (%)",0.405,0.252,-0.382,0.728,0.39,-0.497,0.93
+"DIST_COLEGAS","Distrai-se com aparelhos de colegas (%)",0.337,0.333,-0.383,0.607,0.515,-0.498,0.882
 "H_LAZER_ESCOLA","Lazer digital na escola (h/dia)",0.348,0.259,0.319,0.626,0.4,0.416,0.725
 "H_LAZER_SEMANA","Lazer digital em dia de aula (h/dia)",0.458,-0.108,0.345,0.824,-0.167,0.449,0.908
 "H_LAZER_FDS","Lazer digital no fim de semana (h/dia)",0.374,-0.11,0.474,0.674,-0.171,0.616,0.863

@@ -8,9 +8,11 @@ OECD. *PISA Data Analysis Manual: SPSS*. 2. ed. Paris: OECD Publishing, 2009.
 
 ### Tema, texto-base e dados
 
+BRASIL. Lei nº 15.100, de 13 de janeiro de 2025. Dispõe sobre a utilização, por estudantes, de aparelhos eletrônicos portáteis pessoais nos estabelecimentos públicos e privados de ensino da educação básica. *Diário Oficial da União*, Brasília, 14 jan. 2025.
+
 DOLAN, E. W. New psychology research reveals the cognitive cost of smartphone notifications. *PsyPost*, 18 mar. 2026. Disponível em: https://www.psypost.org/new-psychology-research-reveals-the-cognitive-cost-of-smartphone-notifications/.
 
-FOURNIER, H.; FOURNEL, A.; OSIURAK, F.; KOENIG, O.; PÂRIS, F.; GAUJOUX, V.; RINGEVAL, F. Attention hijacked: how social media notifications disrupt cognitive processing. *Computers in Human Behavior*, art. 108926, 2026. doi:10.1016/j.chb.2026.108926.
+FOURNIER, H.; FOURNEL, A.; OSIURAK, F.; KOENIG, O.; PÂRIS, F.; GAUJOUX, V.; RINGEVAL, F. Attention hijacked: how social media notifications disrupt cognitive processing. *Computers in Human Behavior*, v. 179, art. 108926, jun. 2026. doi:10.1016/j.chb.2026.108926.
 
 KERTARAJASA, B. M. F.; SOEMARYANI, I. When digital technology distracts: impact on cognitive load and work productivity in Generation Z. *Jurnal Fokus Manajemen Bisnis*, v. 16, n. 1, p. 61–81, 2026. doi:10.12928/fokus.v16i1.14769.
 
@@ -19,8 +21,6 @@ MARK, G.; GUDITH, D.; KLOCKE, U. The cost of interrupted work: more speed and st
 MARK, G. *Attention Span: A Groundbreaking Way to Restore Balance, Happiness, and Productivity*. Toronto: Hanover Square Press, 2023. Ver também: AMERICAN PSYCHOLOGICAL ASSOCIATION. Why our attention spans are shrinking, with Gloria Mark, PhD. *Speaking of Psychology* (podcast), 2023. Disponível em: https://www.apa.org/news/podcasts/speaking-of-psychology/attention-spans.
 
 OECD. *PISA 2022 Results (Volume I): The State of Learning and Equity in Education*. Paris: OECD Publishing, 2023a.
-
-OECD. *PISA 2022 Results (Volume II): Learning During — and From — Disruption*. Paris: OECD Publishing, 2023b.
 
 OECD. *PISA 2022 Database* (questionário do estudante, CY08MSP_STU_QQQ). Paris: OECD, 2023c.
 

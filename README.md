@@ -28,7 +28,7 @@ O relatório completo está em [`relatorio/`](relatorio/README.md), dividido por
 
 Os dois CSVs agregados estão versionados, então a análise em R roda sem os microdados. A amostra analítica tem **n = 74** sistemas (35 da OCDE). Os Estados Unidos, o Vietnã, a Guatemala, o Camboja e o Paraguai não aplicaram os itens ST322 e ST326, e a Costa Rica não tem ESCS no arquivo.
 
-**Indicadores (p = 9):** distração com o próprio dispositivo e com o dos colegas; horas de lazer digital na escola, em dia de aula e no fim de semana; notificações ativas na aula; manter o aparelho por perto para responder; pressão para estar online; ansiedade sem o aparelho.
+**Indicadores (p = 9):** distração com o próprio aparelho e com o dos colegas; horas de lazer digital na escola, em dia de aula e no fim de semana; notificações ativas na aula; manter o aparelho por perto para responder; pressão para estar online; ansiedade sem o aparelho.
 
 ---
 
@@ -74,10 +74,11 @@ R/00_executar_tudo.R  ── carrega R/funcoes/*.R, semente 731, roda as etapas 
         ├─ 04_agrupamento.R        Ward + k-médias, silhueta, estabilidade
         ├─ 05_desempenho.R         regressão multivariada (Wilks), MANOVA, MANCOVA
         ├─ 06_entre_dentro.R       meta-análise DerSimonian–Laird, entre × dentro
-        └─ 07_sensibilidade.R      OCDE, sem atípicos, Spearman, partição alternativa
+        ├─ 07_sensibilidade.R      OCDE, sem atípicos, Spearman, partição alternativa
+        └─ 08_graficos_relatorio.R gráficos de síntese (entre × dentro, médias ajustadas, Brasil)
                     │
                     ▼
-results/tables/ (29 CSVs) · results/figures/ (10 PNGs) · results/log_execucao.txt
+results/tables/ (30 CSVs) · results/figures/ (13 PNGs) · results/log_execucao.txt
 ```
 
 ---
@@ -138,6 +139,7 @@ R/
   05_desempenho.R                 # Etapa 5: regressão multivariada, MANOVA e MANCOVA
   06_entre_dentro.R               # Etapa 6: meta-análise intrapaís, entre × dentro
   07_sensibilidade.R              # Etapa 7: análises de sensibilidade
+  08_graficos_relatorio.R         # Etapa 8: gráficos de síntese para o relatório
   funcoes/
     diagnosticos.R                # Bartlett, KMO, Mardia, Mahalanobis
     acp.R                         # Análise paralela, vara quebrada, congruência, bootstrap da ACP
@@ -149,8 +151,8 @@ data/
   pisa2022_gap_intrapais.csv      # Diferenças intrapaís com EP BRR (versionado)
   rotulos_paises.json             # Nomes oficiais dos países
 results/
-  tables/                         # t01–t16 (CSV)
-  figures/                        # f01–f10 (PNG)
+  tables/                         # t01–t17 (CSV)
+  figures/                        # f01–f13 (PNG)
   log_execucao.txt                # Log completo da última execução
 relatorio/
   README.md                       # Capa e índice

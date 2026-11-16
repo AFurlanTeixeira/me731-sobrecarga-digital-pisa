@@ -16,8 +16,8 @@ gaps   <- read.csv("data/pisa2022_gap_intrapais.csv", stringsAsFactors = FALSE)
 X_VARS <- c("DIST_PROPRIA", "DIST_COLEGAS", "H_LAZER_ESCOLA", "H_LAZER_SEMANA",
             "H_LAZER_FDS", "NOTIF_ATIVAS", "SEMPRE_DISPONIVEL", "PRESSAO_ONLINE",
             "ANSIEDADE_SEM_DISP")
-ROTULOS <- c(DIST_PROPRIA = "Distrai-se com o próprio dispositivo (%)",
-             DIST_COLEGAS = "Distrai-se com dispositivos de colegas (%)",
+ROTULOS <- c(DIST_PROPRIA = "Distrai-se com o próprio aparelho (%)",
+             DIST_COLEGAS = "Distrai-se com aparelhos de colegas (%)",
              H_LAZER_ESCOLA = "Lazer digital na escola (h/dia)",
              H_LAZER_SEMANA = "Lazer digital em dia de aula (h/dia)",
              H_LAZER_FDS = "Lazer digital no fim de semana (h/dia)",

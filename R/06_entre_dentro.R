@@ -34,7 +34,7 @@ for (v in c("NOTIF", "DIST")) {
   plot(y[o], yy, pch = 19, cex = 0.6, col = cores[gg$grupo[o]], yaxt = "n", ylab = "",
        xlim = range(c(y - 2 * s, y + 2 * s), na.rm = TRUE),
        xlab = "Diferença em Matemática (pontos), dado o ESCS",
-       main = if (v == "NOTIF") "Raramente desliga notificações" else "Distrai-se com o dispositivo")
+       main = if (v == "NOTIF") "Raramente desliga notificações" else "Distrai-se com o aparelho")
   segments(y[o] - 1.96 * s[o], yy, y[o] + 1.96 * s[o], yy, col = cores[gg$grupo[o]])
   axis(2, yy, gg$CNT[o], las = 1, cex.axis = 0.45, tick = FALSE)
   abline(v = 0, lty = 2)
