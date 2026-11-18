@@ -1,5 +1,7 @@
 ## Apêndice A — Reprodutibilidade
 
+Mais informações sobre como o trabalho foi feito, incluindo todos os scripts, os dados agregados e os resultados, estão no repositório do projeto: <https://github.com/AFurlanTeixeira/me731-sobrecarga-digital-pisa/tree/main>.
+
 O processamento tem duas etapas.
 
 ```bash

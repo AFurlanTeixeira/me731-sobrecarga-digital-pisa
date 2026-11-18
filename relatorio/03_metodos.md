@@ -294,4 +294,4 @@ A comparação entre componentes usa o mesmo cosseno do alinhamento bootstrap (S
 
 ### 3.8 Implementação
 
-A agregação dos microdados foi feita em Python (pandas), e toda a análise, em R base, sem pacotes adicionais, com as funções escritas a partir das fórmulas acima (pasta `R/funcoes/`). Os resultados críticos foram conferidos contra implementações de referência do R (`prcomp`, `anova.mlm`) por asserções `stopifnot`. A semente é 731. O Apêndice A descreve a reprodução.
+A agregação dos microdados foi feita em Python (pandas), e toda a análise, em R base, sem pacotes adicionais, com as funções escritas a partir das fórmulas acima (pasta `R/funcoes/`). Os resultados críticos foram conferidos contra implementações de referência do R (`prcomp`, `anova.mlm`) por asserções `stopifnot`. A semente é 731. O Apêndice A descreve a reprodução, e o código completo está disponível no repositório do projeto no GitHub (<https://github.com/AFurlanTeixeira/me731-sobrecarga-digital-pisa/tree/main>).
