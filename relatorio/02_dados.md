@@ -2,16 +2,16 @@
 
 ### 2.1 Fonte
 
-Os dados vêm do PISA 2022, que avaliou cerca de 690 mil estudantes de 81 países e economias (OECD, 2023a). Foi usado o arquivo do questionário do estudante (`CY08MSP_STU_QQQ`), distribuído pela OCDE em formato SPSS, com 613.744 registros de 80 países e economias (OECD, 2023c). Para este trabalho, foi lida uma cópia do mesmo arquivo em formato *parquet*, mantida num repositório público, porque o servidor da OCDE estava inacessível no ambiente de processamento. O script de agregação (Apêndice A) aceita os dois formatos, e as médias de Matemática obtidas coincidem com as publicadas pela OCDE (por exemplo, Brasil 379, Singapura 575 e Japão 536).
+Os dados vêm do PISA 2022, que avaliou cerca de 690 mil estudantes de 81 países e economias (OECD, 2023a). Foi usado o arquivo do questionário do estudante (`CY08MSP_STU_QQQ`), distribuído pela OCDE em formato SPSS, com 613.744 registros de 80 países e economias (OECD, 2023b). Para este trabalho, foi lida uma cópia do mesmo arquivo em formato *parquet*, mantida num repositório público, porque o servidor da OCDE estava inacessível no ambiente de processamento. O script de agregação (Apêndice A) aceita os dois formatos, e as médias de Matemática obtidas coincidem com as publicadas pela OCDE (por exemplo, Brasil 379, Singapura 575 e Japão 536).
 
 ### 2.2 Indicadores
 
-Os indicadores foram agregados por país com o peso final do estudante (`W_FSTUWT`). As variáveis de desempenho são a média dos 10 valores plausíveis, conforme o *PISA Data Analysis Manual* (OECD, 2009, cap. 6–8).
+Os indicadores foram agregados por país com o peso final do estudante (`W_FSTUWT`). As variáveis de desempenho são a média dos 10 valores plausíveis, conforme o *PISA Data Analysis Manual* (OECD, 2009, caps. 6–8).
 
-**Tabela 1.** Indicadores de uso digital (bloco **X**, p = 9) e variáveis de resultado.
+**Tabela 1.** Indicadores de uso digital (bloco **X**, p = 9) e variáveis de resultado. Fonte: questionário do estudante do PISA 2022.
 
 | Código | Item PISA | Definição (por país) |
-|---|---|---|
+|----------------------|------------|------------------------------------------------------------------|
 | DIST_PROPRIA | ST273Q06 | % que se distrai usando recursos digitais em todas ou na maioria das aulas de Matemática |
 | DIST_COLEGAS | ST273Q07 | % que se distrai com colegas usando recursos digitais, mesma escala |
 | H_LAZER_ESCOLA | ST326Q04 | horas/dia de lazer digital na escola (ponto médio das classes) |
@@ -32,13 +32,13 @@ Cinco países não aplicaram os itens ST322 e ST326: Estados Unidos, Vietnã, Gu
 
 ### 2.4 Análise descritiva
 
-Em média, 29% dos estudantes relatam se distrair com o próprio aparelho na maioria das aulas, com amplitude de 5% (Japão) a 54% (Argentina). Um terço raramente desliga notificações em aula (35%, de 12% a 52%), e um quarto sente pressão para estar online (24%, de 8% a 51%) (tabela `t02`). O Brasil está entre os países de maior distração em aula (45%) e de notificações ativas (40%), com Matemática de 379 pontos e ESCS de −0,99 (Figura 2).
+Na média dos 74 países, 29% dos estudantes relatam se distrair com o próprio aparelho na maioria das aulas, com amplitude de 5% (Japão) a 54% (Argentina). Um terço raramente desliga notificações em aula (35%, de 12% a 52%), e um quarto sente pressão para estar online (24%, de 8% a 51%) (tabela `t02`). O Brasil está entre os países de maior distração em aula (45%) e de notificações ativas (40%), com Matemática de 379 pontos e ESCS de −0,99.
 
 ![Figura 1](../results/figures/f01_correlacoes.png)
 
 **Figura 1.** Matriz de correlações entre os 9 indicadores, o ESCS e o desempenho, 74 países, PISA 2022 (`f01`, `t03`).
 
-A Figura 1 já sugere a tese. As horas de lazer digital fora da escola correlacionam-se positivamente com o desempenho (r = 0,45 com Matemática em dia de aula e 0,44 no fim de semana), enquanto o lazer digital na escola é praticamente não correlacionado (r = −0,06). Os indicadores de fragmentação correlacionam-se negativamente: notificações ativas, r = −0,50; ansiedade sem o aparelho, r = −0,54. Há, porém, um confundidor evidente. O ESCS correlaciona-se 0,72 com Matemática e 0,70 com SEMPRE_DISPONIVEL. Manter o aparelho por perto para responder mensagens é, entre países, sobretudo um marcador de riqueza. Por isso, toda associação com o desempenho será examinada com e sem ajuste pelo ESCS.
+A Figura 1 já sugere a tese. As horas de lazer digital fora da escola correlacionam-se positivamente com o desempenho (r = 0,45 com Matemática em dia de aula e 0,44 no fim de semana), enquanto o lazer digital na escola é praticamente não correlacionado (r = −0,06). Os indicadores de fragmentação correlacionam-se negativamente: notificações ativas, r = −0,50; ansiedade sem o aparelho, r = −0,54. Há, porém, um confundidor evidente. O ESCS correlaciona-se 0,72 com Matemática e 0,70 com SEMPRE_DISPONIVEL. Manter o aparelho por perto para responder mensagens é, entre países, sobretudo um marcador de riqueza. Por isso, toda associação com o desempenho será examinada com e sem ajuste pelo ESCS. A Figura 2 resume a posição do Brasil na amplitude de cada indicador.
 
 ![Figura 2](../results/figures/f13_brasil_indicadores.png)
 

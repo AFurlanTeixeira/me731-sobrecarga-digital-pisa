@@ -11,7 +11,7 @@ Esta seção define cada estimador e cada teste, as suposições de que dependem
 **Hipóteses.** A tese da reportagem, refinada pela literatura da Seção 1.3, gera previsões falseáveis em cada etapa:
 
 | Pergunta | Hipótese nula | Previsão sob a tese da fragmentação |
-|---|---|---|
+|--------|------------------------------------------|--------------------------------------------------|
 | Q1 | $\boldsymbol{\rho} = \mathbf{I}$; nenhuma estrutura de baixa dimensão | Componentes distintas de volume e de fragmentação, com sinais estáveis |
 | Q3 | $\boldsymbol{\beta}_{(\text{CP}j)} = \mathbf{0}_{1\times 3}$, dado o ESCS | $\boldsymbol{\beta}_{(\text{CP2})} < \mathbf{0}$ nas três áreas; $\boldsymbol{\beta}_{(\text{CP1})}$ próximo de zero |
 | Q3 | Vetores de médias de $\mathbf{Y}$ iguais entre grupos, dado o ESCS | Grupos com mais fragmentação têm médias ajustadas menores |
@@ -243,8 +243,9 @@ Os alunos do PISA não são uma amostra aleatória simples: são sorteados em do
 
 1. **Variância amostral.** Para cada valor plausível $m'$, reestima-se $b_c$ com cada um dos $R = 80$ pesos replicados fornecidos no arquivo, obtendo $\hat{b}_{c,r}^{(m')}$. Os pesos seguem o método de replicação repetida balanceada (*balanced repeated replication*, BRR) na variante de Fay. Com o fator de Fay $k = 0{,}5$,
 $$
-U^{(m')} = \frac{1}{R(1-k)^2}\sum_{r=1}^{R}\big(\hat{b}_{c,r}^{(m')} - \hat{b}_c^{(m')}\big)^2 = \frac{1}{20}\sum_{r=1}^{80}\big(\hat{b}_{c,r}^{(m')} - \hat{b}_c^{(m')}\big)^2, \qquad U = \frac1M\sum_{m'} U^{(m')}.
+U^{(m')} = \frac{1}{R(1-k)^2}\sum_{r=1}^{R}\big(\hat{b}_{c,r}^{(m')} - \hat{b}_c^{(m')}\big)^2 = \frac{1}{20}\sum_{r=1}^{80}\big(\hat{b}_{c,r}^{(m')} - \hat{b}_c^{(m')}\big)^2,
 $$
+e a variância amostral combinada é a média $U = M^{-1}\sum_{m'} U^{(m')}$.
 2. **Variância de imputação.** $B = \frac{1}{M-1}\sum_{m'}\big(\hat{b}_c^{(m')} - \hat{b}_c\big)^2$, com $\hat{b}_c = M^{-1}\sum_{m'} \hat{b}_c^{(m')}$.
 3. **Variância total.** $\widehat{\operatorname{Var}}(\hat{b}_c) = U + (1 + M^{-1})B$.
 
@@ -282,7 +283,7 @@ Para comparar as duas escalas, estimou-se também a inclinação entre países, 
 As escolhas de análise que poderiam alterar as conclusões foram variadas uma a uma:
 
 | Escolha | Alternativa | Comparação |
-|---|---|---|
+|--------------------|---------------------------------------------|-----------------------------------|
 | Amostra da ACP | só os 35 países da OCDE; sem atípicos ($d^2 \leq \chi^2_9(0{,}01)$) | cosseno entre os vetores de coeficientes |
 | Correlação | Spearman, em vez de Pearson | cosseno entre os vetores de coeficientes |
 | Espaço do agrupamento | 9 variáveis padronizadas, em vez dos $K$ escores | Rand ajustado com a partição original |

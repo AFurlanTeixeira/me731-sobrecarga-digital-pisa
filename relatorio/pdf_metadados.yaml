@@ -1,0 +1,37 @@
+---
+title: "Fragmentação, não tempo de tela"
+subtitle: "Uma análise multivariada da sobrecarga digital e do desempenho de estudantes em 74 sistemas educacionais (PISA 2022)"
+author:
+  - "Discente: Arthur Agostinho (RA 164363)"
+  - "Docente: Prof. Aluísio de Souza Pinheiro"
+date: "ME731 (Análise Multivariada), Projeto 2. Universidade Estadual de Campinas, 2º semestre de 2026"
+lang: pt-BR
+documentclass: article
+fontsize: 12pt
+geometry: "a4paper, top=3cm, left=3cm, right=2cm, bottom=2cm"
+mainfont: "Times New Roman"
+mainfontoptions:
+  - "Ligatures=NoCommon"
+sansfont: "Arial"
+monofont: "Consolas"
+linestretch: 1.15
+toc: true
+toc-depth: 2
+toc-title: "Sumário"
+colorlinks: true
+linkcolor: "black"
+urlcolor: "blue!50!black"
+header-includes:
+  - \usepackage{etoolbox}
+  - \AtBeginEnvironment{longtable}{\small}
+  - \usepackage{float}
+  - \let\origfigure\figure
+  - \let\endorigfigure\endfigure
+  - \renewenvironment{figure}[1][2] {\expandafter\origfigure\expandafter[H]} {\endorigfigure}
+  - \setlength{\emergencystretch}{3em}
+  - \usepackage{needspace}
+  - \usepackage{xurl}
+  - \usepackage[htt]{hyphenat}
+  - \usepackage{fvextra}
+  - \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,breakanywhere,commandchars=\\\{\},fontsize=\small}
+---

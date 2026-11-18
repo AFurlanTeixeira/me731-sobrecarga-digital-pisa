@@ -2,7 +2,7 @@
 
 ### 5.1 Número de componentes
 
-**Tabela 3.** Autovalores, variância explicada e intervalos de 95%: bootstrap percentil e assintótico de JW, Eq. 8-33 (`t05`, `t07a`).
+**Tabela 3.** Autovalores, variância explicada e intervalos de 95%: bootstrap percentil e assintótico de JW, Eq. 8-33 (`t05`, `t07a`). Dados: PISA 2022, 74 países.
 
 | CP | λ | IC 95% bootstrap | IC 95% (8-33) | % var. | % acum. |
 |---|---|---|---|---|---|
@@ -22,11 +22,11 @@ Os intervalos 8-33 são mais largos, porque a variância assintótica $2\lambda_
 
 ![Figura 4](../results/figures/f03_scree.png)
 
-**Figura 4.** Gráfico de cotovelo: autovalores com IC bootstrap de 95% e a linha de referência λ = 1 (`f03`).
+**Figura 4.** Gráfico de cotovelo: autovalores com IC bootstrap de 95% e a linha de referência λ = 1 (`f03`). Dados: PISA 2022, 74 países.
 
 ### 5.2 Interpretação
 
-**Tabela 4.** Correlações variável–componente e comunalidades (`t06`). Em negrito, $|r| \geq 0{,}5$ antes do arredondamento. Os dois valores −0,50 da CP3 são −0,497 e −0,498.
+**Tabela 4.** Correlações variável–componente e comunalidades (`t06`). Em negrito, $|r| \geq 0{,}5$ antes do arredondamento. Os dois valores −0,50 da CP3 são −0,497 e −0,498. Dados: PISA 2022, 74 países.
 
 | Variável | CP1 | CP2 | CP3 | Comunalidade |
 |---|---|---|---|---|
@@ -44,8 +44,8 @@ A Figura 5 mostra os coeficientes com IC bootstrap. Em cinza estão os coeficien
 
 ![Figura 5](../results/figures/f04_cargas.png)
 
-**Figura 5.** Coeficientes das três componentes com IC bootstrap de 95% (`f04`, `t07b`).
+**Figura 5.** Coeficientes das três componentes com IC bootstrap de 95% (`f04`, `t07b`). Dados: PISA 2022, 74 países.
 
 - **CP1, volume de uso (36%).** Coeficientes positivos e estáveis nas três medidas de horas de lazer e nas duas de distração. Países com escore alto passam mais tempo em telas e relatam mais distração (Bulgária, Estônia, Letônia, Argentina e Hungria). O Japão e o Brunei têm os escores mais baixos.
-- **CP2, fragmentação e compulsão (27%).** Notificações ativas e ansiedade sem o aparelho entram com peso positivo e estável, e a distração causada por colegas também. SEMPRE_DISPONIVEL entra com peso negativo. As horas de lazer em dia de aula e no fim de semana têm peso próximo de zero (correlação de −0,17), e o lazer na escola tem peso positivo, mas de sinal instável. A CP2 isola, portanto, um padrão não correlacionado com o volume: o aluno não desliga o aparelho, sente-se ansioso sem ele e é interrompido. É o construto mais próximo da "infomania" do texto-base e corresponde à "sobrecarga por fragmentação" da Seção 1.3, ao passo que a CP1 corresponde à sobrecarga por volume. O sinal negativo de SEMPRE_DISPONIVEL, que se correlaciona 0,70 com o ESCS, indica que a CP2 também carrega parte do nível de desenvolvimento dos países, ponto retomado na Seção 9.
-- **CP3, pressão sem distração (19%).** Contrapõe pressão para estar online e lazer de fim de semana, com pesos positivos, à distração em aula, com peso negativo. Os escores mais altos são os de Macau, Eslováquia, Malta, Taipé Chinesa e Romênia (`t10`). Entre os sistemas do Leste Asiático, a distração em aula é rara (9% na Coreia, 13% em Macau), mas a pressão por disponibilidade é alta (35% na Coreia, 44% em Macau). O Japão é exceção: tem a menor distração da amostra (5%), mas pressão baixa (16%) e escore negativo na CP3.
+- **CP2, fragmentação e compulsão (27%).** Notificações ativas e ansiedade sem o aparelho entram com peso positivo e estável, e a distração causada por colegas também. SEMPRE_DISPONIVEL entra com peso negativo. As horas de lazer em dia de aula e no fim de semana têm peso próximo de zero (correlação de −0,17), e o lazer na escola tem peso positivo, mas de sinal instável. A CP2 isola, portanto, um padrão não correlacionado com o volume: o aluno não desliga o aparelho, sente-se ansioso sem ele e é interrompido. É o construto mais próximo da "infomania" do texto-base e corresponde à fragmentação dos estímulos descrita na Seção 1.3, ao passo que a CP1 corresponde ao volume. O sinal negativo de SEMPRE_DISPONIVEL, que se correlaciona 0,70 com o ESCS, indica que a CP2 também carrega parte do nível de desenvolvimento dos países, ponto retomado na Seção 9.
+- **CP3, pressão sem distração (19%).** Contrapõe pressão para estar online e lazer de fim de semana, com pesos positivos, à distração em aula, com peso negativo. Os escores mais altos são os de Macau, Eslováquia, Malta, Taipé Chinesa e Romênia (`t10`). Entre os sistemas do Leste Asiático, a distração em aula é rara (9% na Coreia, 13% em Macau), mas a pressão para estar online é alta (35% na Coreia, 44% em Macau). O Japão é exceção: tem a menor distração da amostra (5%), mas pressão baixa (16%) e escore negativo na CP3.

@@ -21,3 +21,5 @@ Discente: Arthur Agostinho (RA 164363)
 - [10. Conclusão](10_conclusao.md)
 - [Referências](11_referencias.md)
 - [Apêndice A — Reprodutibilidade](12_apendice_reprodutibilidade.md)
+
+**Versão completa em PDF:** [relatorio_completo.pdf](relatorio_completo.pdf). Para gerá-la de novo (requer pandoc 3 e XeLaTeX), rode `sh relatorio/gerar_pdf.sh` na raiz do repositório.

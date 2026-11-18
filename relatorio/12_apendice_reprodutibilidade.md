@@ -14,7 +14,7 @@ A etapa 1 lê os 613.744 registros e grava `data/pisa2022_paises.csv` e `data/pi
 **Correspondência entre resultados e seções.**
 
 | Arquivo | Conteúdo | Seção |
-|---|---|---|
+|------------------------------|-------------------------------------------------------|---------------|
 | t01 | Exclusões | 2.3 |
 | t02, t03, f01, f13 | Descritiva, correlações e posição do Brasil | 2.4 |
 | t04a, t04c, t04d, f02 | Bartlett, Mardia e atípicos | 4 |

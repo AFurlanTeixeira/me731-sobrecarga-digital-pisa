@@ -1,6 +1,6 @@
 ## 4. Diagnósticos antes da ACP
 
-**Tabela 2.** Adequação dos dados à ACP (`t04a`–`t04d`).
+**Tabela 2.** Adequação dos dados à ACP (`t04a`–`t04d`). Dados: PISA 2022, 74 países.
 
 | Diagnóstico | Resultado |
 |---|---|
@@ -14,4 +14,4 @@ As correlações são suficientes para a redução de dimensão: rejeita-se a es
 
 ![Figura 3](../results/figures/f02_quiquadrado.png)
 
-**Figura 3.** Gráfico qui-quadrado das distâncias de Mahalanobis dos 74 países (`f02`).
+**Figura 3.** Gráfico qui-quadrado das distâncias de Mahalanobis dos 74 países (`f02`). Dados: PISA 2022, 74 países.

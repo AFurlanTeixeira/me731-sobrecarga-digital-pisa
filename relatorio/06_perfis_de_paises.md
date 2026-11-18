@@ -2,7 +2,7 @@
 
 ### 6.1 Número de grupos e estabilidade
 
-**Tabela 5.** Largura média de silhueta por número de grupos (`t08`).
+**Tabela 5.** Largura média de silhueta por número de grupos (`t08`). Dados: PISA 2022, 74 países.
 
 | G | Silhueta (Ward) | Silhueta (k-médias) | Rand ajustado Ward × k-médias |
 |---|---|---|---|
@@ -16,10 +16,10 @@ A regra escolhe G = 5, embora a diferença em relação a G = 4 seja mínima. A 
 
 ### 6.2 Os cinco perfis
 
-**Tabela 6.** Perfil médio dos grupos (`t10`, `t11`).
+**Tabela 6.** Perfil médio dos grupos (`t10`, `t11`). Dados: PISA 2022, 74 países.
 
 | Grupo | n | Exemplos | Dist. própria (%) | Lazer semana (h) | Notif. ativas (%) | Pressão (%) | Ansiedade (%) | ESCS | MAT |
-|---|---|---|---|---|---|---|---|---|---|
+|-------------------|----|-----------------------|--------|--------|--------|--------|--------|-------|-------|
 | G1 Baixa distração, alta pressão | 7 | JPN, KOR, TAP, HKG, MAC, MLT, BRN | 12,6 | 2,1 | 20,8 | 36,9 | 24,6 | −0,16 | 515,8 |
 | G2 Uso moderado, baixa pressão | 19 | GBR, IRL, DNK, NOR, ESP, FRA, CHE, SGP | 28,0 | 2,5 | 31,4 | 15,2 | 21,2 | −0,01 | 471,8 |
 | G3 Alta distração em aula | 8 | ARG, BRA, CHL, URY, FIN, CAN, AUS, NZL | 46,5 | 2,6 | 38,6 | 15,3 | 21,9 | −0,24 | 440,5 |
@@ -28,6 +28,6 @@ A regra escolhe G = 5, embora a diferença em relação a G = 4 seja mínima. A 
 
 ![Figura 6](../results/figures/f06_mapa_cp1_cp2.png)
 
-**Figura 6.** Países no plano CP1 × CP2, com as direções das variáveis (`f06`). O dendrograma (`f05`) e os perfis padronizados dos grupos (`f07`) estão em `results/figures/`.
+**Figura 6.** Países no plano CP1 × CP2, com as direções das variáveis (`f06`). O dendrograma (`f05`) e os perfis padronizados dos grupos (`f07`) estão em `results/figures/`. Dados: PISA 2022, 74 países.
 
 O Brasil está no G3, ao lado de Argentina, Chile e Uruguai, e de quatro sistemas anglo-nórdicos de alto desempenho (Finlândia, Canadá, Austrália e Nova Zelândia). O que une o grupo é a distração em sala, a mais alta da amostra: 46,5% contra 29% na média geral. Esse fato é relevante para a política brasileira de restrição de celulares nas escolas (Brasil, 2025).

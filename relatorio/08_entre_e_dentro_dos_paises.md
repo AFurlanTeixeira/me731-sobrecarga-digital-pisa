@@ -2,10 +2,10 @@
 
 As Seções 5 a 7 tratam de médias nacionais. A afirmação da reportagem é sobre pessoas: o aluno que vive conectado tem desempenho menor do que um colega do mesmo país e do mesmo nível socioeconômico?
 
-**Tabela 10.** Meta-análise das diferenças intrapaís em Matemática, ajustadas pelo ESCS do aluno (`t15a`).
+**Tabela 10.** Meta-análise das diferenças intrapaís em Matemática, ajustadas pelo ESCS do aluno (`t15a`). Dados: PISA 2022, 74 países.
 
 | Comportamento do aluno | Efeito médio (efeitos aleatórios) | IC 95% | τ | I² | Negativos signif. | Positivos signif. |
-|---|---|---|---|---|---|---|
+|---------------------------|--------------|---------------|-------|-------|---------------|---------------|
 | Raramente desliga notificações | **−26,5** | (−28,4; −24,6) | 7,9 | 0,90 | **74 de 74** | 0 |
 | Distrai-se com o aparelho | −15,0 | (−17,5; −12,6) | 10,1 | 0,91 | 58 de 74 | 0 |
 | Mais de 4 h/dia de lazer digital em dia de aula | **+6,3** | (+4,2; +8,5) | 8,9 | 0,90 | 7 de 74 | 34 de 74 |

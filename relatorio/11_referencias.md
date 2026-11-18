@@ -16,13 +16,13 @@ FOURNIER, H.; FOURNEL, A.; OSIURAK, F.; KOENIG, O.; PÂRIS, F.; GAUJOUX, V.; RIN
 
 KERTARAJASA, B. M. F.; SOEMARYANI, I. When digital technology distracts: impact on cognitive load and work productivity in Generation Z. *Jurnal Fokus Manajemen Bisnis*, v. 16, n. 1, p. 61–81, 2026. doi:10.12928/fokus.v16i1.14769.
 
-MARK, G.; GUDITH, D.; KLOCKE, U. The cost of interrupted work: more speed and stress. In: *Proceedings of CHI 2008*. ACM, 2008. p. 107–110.
+MARK, G.; GUDITH, D.; KLOCKE, U. The cost of interrupted work: more speed and stress. In: *Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI 2008)*. Florença: ACM, 2008. p. 107–110.
 
 MARK, G. *Attention Span: A Groundbreaking Way to Restore Balance, Happiness, and Productivity*. Toronto: Hanover Square Press, 2023. Ver também: AMERICAN PSYCHOLOGICAL ASSOCIATION. Why our attention spans are shrinking, with Gloria Mark, PhD. *Speaking of Psychology* (podcast), 2023. Disponível em: https://www.apa.org/news/podcasts/speaking-of-psychology/attention-spans.
 
 OECD. *PISA 2022 Results (Volume I): The State of Learning and Equity in Education*. Paris: OECD Publishing, 2023a.
 
-OECD. *PISA 2022 Database* (questionário do estudante, CY08MSP_STU_QQQ). Paris: OECD, 2023c.
+OECD. *PISA 2022 Database* (questionário do estudante, CY08MSP_STU_QQQ). Paris: OECD, 2023b.
 
 OECD. *Students, Digital Devices and Success*. Paris: OECD Publishing, 2024.
 
@@ -32,4 +32,4 @@ WAINWRIGHT, M. Emails "pose threat to IQ". *The Guardian*, Londres, 22 abr. 2005
 
 WELLHUB EDITORIAL TEAM. How U.S. HR can reduce digital overload and prevent cognitive fatigue in 2026. *Wellhub*, atualizado em 28 jan. 2026. Disponível em: https://wellhub.com/en-us/blog/wellness-and-benefits-programs/digital-overload-cognitive-fatigue/.
 
-WILSON, G. *Infomania experiment for Hewlett-Packard*. Nota do autor, 2010. Disponível em: https://litfl.com/wp-content/uploads/2020/12/Infomania_experiment_for_HP.pdf.
+WILSON, G. *The "infomania" study*. Nota do autor sobre o experimento para a Hewlett-Packard, 16 jan. 2010. Disponível em: https://litfl.com/wp-content/uploads/2020/12/Infomania_experiment_for_HP.pdf.
